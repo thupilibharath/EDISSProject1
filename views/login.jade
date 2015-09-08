@@ -1,0 +1,17 @@
+//
+   Created by Bharath on 9/3/15.
+extends layout
+
+block content
+   .container
+      form(action="/login", method="post")
+         h1.form-signin-heading Please sign in
+         //- p.col-md-6.col-md-offset-3 Username
+         input.input-block-level.col-md-6.col-md-offset-3(type="text", id= "uname", name="username", align="center", placeholder="Enter Username",)
+         br
+         br
+         //- p.col-md-6.col-md-offset-3 Password
+         input.input-block-level.col-md-6.col-md-offset-3(type="password", id = "pwd", name="password", align="center" placeholder="Enter Password")
+         button.btn.btn-large.btn-primary.col-md-6.col-md-offset-3(type="submit", id = "subbutton", onclick = "myFunction()",align="center") Sign in
+
+

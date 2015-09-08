@@ -1,0 +1,81 @@
+//
+   Created by Bharath on 9/3/15
+
+extends layout
+block content
+   wrap
+      .container
+         div(class='page-header')
+            div(class='btn-toolbar pull-right')
+               a(href='/logout' class='btn btn-primary' ) Logout
+         form(action="/updateresults", method="post")
+            h1 Welcome to the Quiz #{sess.username}
+            p Q1 What is the result of the operation 2+2 ?
+            .checkbox
+               label
+               input(type='checkbox', name= 'a1' value='test')
+               |   (a)  4
+
+            .checkbox
+               label
+               input(type='checkbox', name = 'b1' value='test')
+               |   (b)  6
+
+
+            .checkbox
+               label
+               input(type='checkbox', name = 'c1' value='test')
+               |   (c)  8
+
+            .checkbox
+               label
+               input(type='checkbox', name = 'd1'  value='test')
+               |   (d)  10
+
+            p Q2 What is the result of the operation 3*4 ?
+            .checkbox
+               label
+               input(type='checkbox', name = 'a2' value='test')
+               |   (a)  4
+
+            .checkbox
+               label
+               input(type='checkbox', name = 'b2' value='test')
+               |   (b)  6
+
+
+            .checkbox
+               label
+               input(type='checkbox', name = 'c2' value='test')
+               |   (c)  8
+
+            .checkbox
+               label
+               input(type='checkbox', name = 'd2' value='test')
+               |   (d)  12
+
+            p Q3 What is the result of the operation 2/2 ?
+            .checkbox
+               label
+               input(type='checkbox', name = 'a3' value='test')
+               |   (a)  4
+
+            .checkbox
+               label
+               input(type='checkbox', name = 'b3' value='test')
+               |   (b)  1
+
+
+            .checkbox
+               label
+               input(type='checkbox', name = 'c3' value='test')
+               |   (c)  8
+
+            .checkbox
+               label
+               input(type='checkbox', name = 'd3' value='test')
+               |   (d)  10
+
+            button#send-message-btn.btn.btn-primary.btn-lg(type"submit") Submit Answers
+
+block body_end

@@ -1,0 +1,15 @@
+//
+   Created by Bharath on 9/4/15.
+
+extends layout
+block content
+   div(class='page-header')
+      div(class='btn-toolbar pull-right')
+         a(href='/logout' class='btn btn-primary' ) Logout
+   h1 Your response has been successfully captured #{sess.username}
+   h3 Here is the evaluation of your answers
+
+   h4 Question1 -  #{answer1}
+   h4 Question2 -  #{answer2}
+   h4 Question3 -  #{answer3}
+   h4 Total score is #{score}/3
