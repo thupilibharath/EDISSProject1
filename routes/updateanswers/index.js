@@ -160,9 +160,9 @@ exports.updateanswers = function(req, res){
             //Insert to database
             var mysql = require('mysql');
             var connection = mysql.createConnection({
-                host: 'localhost',
+                host: 'edissproject1.crbxasmdgbrq.us-east-1.rds.amazonaws.com',
                 user: 'root',
-                password: '',
+                password: 'Pop123465.',
                 database: 'Project1'
             });
 
